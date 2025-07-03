@@ -1,0 +1,167 @@
+.biryani-card {
+  background: white;
+  flex: 0 0 350px;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  scroll-snap-align: start;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.biryani-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.biryani-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.badge {
+  position: absolute;
+  background-color: #F7374F;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding-top:1.5rem;
+  padding-bottom:0.5rem;
+  padding-left:2rem;
+  padding-right:0.5rem;
+  border-radius: 20px;
+  font-family: Archivo;
+  top:-15px;
+  margin-left: -17px;
+  width:8rem;
+}
+
+.card-content {
+  padding: 2rem;
+  text-align: left;
+  height: 180px; 
+  overflow: hidden;
+  font-family: Barlow Condensed;
+}
+
+.card-content h3 {
+  color: #6E260E;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.card-content p {
+  color: #6E6E6E;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.card-header{
+  display: flex;
+  justify-content: space-between;
+  gap:4rem;
+}
+
+.card-header p{
+  color:rgb(240, 152, 20);
+}
+
+.food-icon {
+  width: 18px;
+  height: 18px;
+  border: 2px solid;
+  border-radius: 4px;
+  display: inline-block;
+  position: relative;
+}
+
+.food-icon::after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+}
+
+.veg {
+  border-color: green;
+}
+
+.veg::after {
+  background-color: green;
+}
+
+.nonveg {
+  border-color: red;
+}
+
+.nonveg::after {
+  background-color: red;
+}
+
+.add-cart-btn {
+  background-color: #6e260e;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding:0.3rem 1rem;
+  width:5rem;
+  height:2.2rem;
+  font-size: 0.7rem;
+  font-weight: bold;
+  font-family: Barlow Condensed;
+  margin-top: 0.6rem;
+}
+
+.add-cart-btn:hover {
+  background-color: #4b1c0a;
+}
+
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100px;
+  margin-top: 12px;
+  background-color: #f4f1EA;
+  border-radius: 12px;
+  padding: 4px 8px;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.quantity-control button {
+  background-color: #6e260e;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.quantity-control button:hover {
+  background-color: #a3341c;
+}
+
+.quantity-control span {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #6e260e;
+  margin: 0 6px;
+}
+
+.cart{
+  display:flex;
+  justify-content: space-between;
+  gap:3rem;
+}

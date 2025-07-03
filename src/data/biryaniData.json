@@ -1,0 +1,115 @@
+[
+  {
+    "title": "Rambha Biryani",
+    "description": "Bagara Biryani is fusion of Telangana special rice and many hidden recipes of tribes. Hence we call it as Folk Biryani or Naatu Biryani.",
+    "image": "/assets/rambha.png",
+    "badge": "Best Seller",
+    "price": 250,
+    "type": "NonVeg",
+    "tag": ["Best Seller"],
+    "cuisine": ["Biryani"],
+    "rating": 4.5
+  },
+  {
+    "title": "Egg Biryani",
+    "description": "Bagara Biryani is fusion of Telangana special rice and many hidden recipes of tribes. Hence we call it as Folk Biryani or Naatu Biryani.",
+    "image": "/assets/egg.png",
+    "badge": "Best Seller",
+    "price": 220,
+    "type": "NonVeg",
+    "tag": ["Best Seller"],
+    "cuisine": ["Biryani"],
+    "rating": 3.9
+  },
+  {
+    "title": "Mughlai Chicken Biryani",
+    "description": "Bagara Biryani is fusion of Telangana special rice and many hidden recipes of tribes. Hence we call it as Folk Biryani or Naatu Biryani.",
+    "image": "/assets/mughlai.png",
+    "price": 270,
+    "type": "NonVeg",
+    "tag": ["Popular"],
+    "cuisine": ["Biryani", "Mughlai"],
+    "rating": 4.8
+  },
+  {
+    "title": "Nizami Biryani",
+    "description": "Bagara Biryani is fusion of Telangana special rice and many hidden recipes of tribes. Hence we call it as Folk Biryani or Naatu Biryani.",
+    "image": "/assets/nizami.png",
+    "badge": "Best Seller",
+    "price": 230, 
+    "type": "Veg",
+    "tag": ["Best Seller","Popular"],
+    "cuisine": ["Biryani"],
+    "rating": 4.6
+  },
+  {
+    "title": "Veg Biryani",
+    "image": "/assets/vegbiryani.jpg",
+    "price": 200, 
+    "type": "Veg",
+    "tag": [],
+    "cuisine": ["Biryani"],
+    "rating": 3.8
+  },
+  {
+    "title": "Cheese Burst Pizza",
+    "description": "Loaded with mozzarella and cheddar cheese, topped with veggies.",
+    "image": "/assets/pizza.jpg",
+    "badge": "Best Seller",
+    "price": 320,
+    "type": "Veg",
+    "tag": ["Best Seller","Popular"],
+    "cuisine": ["Pizza"],
+    "rating": 4.7
+  },
+  {
+    "title": "Paneer Tikka Pizza",
+    "description": "Desi-style pizza with grilled paneer, capsicum, and onions.",
+    "image": "/assets/paneer.jpg",
+    "price": 290,
+    "type": "Veg",
+    "tag": ["Popular"],
+    "cuisine": ["Pizza"],
+    "rating": 4.3
+  },
+  {
+    "title": "Chicken BBQ Burger",
+    "description": "Juicy grilled chicken patty with BBQ sauce and lettuce.",
+    "image": "/assets/chicken-burger.webp",
+    "badge": "Best Seller",
+    "price": 199,
+    "type": "NonVeg",
+    "tag": ["Best Seller","Popular"],
+    "cuisine": ["Burger"],
+    "rating": 3.8
+  },
+  {
+    "title": "Crispy Veg Burger",
+    "description": "Crunchy patty made of potato and peas, topped with cheese.",
+    "image": "/assets/veg-burger.jpg",
+    "price": 149,
+    "type": "Veg",
+    "tag": [],
+    "cuisine": ["Burger"],
+    "rating": 3.8
+  },
+  {
+    "title": "Chicekn Lollipop",
+    "image": "/assets/chicken-lollipop.jpeg",
+    "badge": "Best Seller",
+    "price": 199,
+    "type": "NonVeg",
+    "tag": ["Best Seller"],
+    "cuisine": ["Kebabs"],
+    "rating": 4.9
+  },
+  {
+    "title": "Chicken Kebab",
+    "image": "/assets/chicken-kebab.jpeg",
+    "price": 149,
+    "type": "NonVeg",
+    "tag": ["Popular"],
+    "cuisine": ["Kebabs"],
+    "rating": 4.0
+  }
+]

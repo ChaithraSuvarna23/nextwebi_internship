@@ -1,0 +1,26 @@
+[
+  {
+    "name": "John Doe",
+    "image": "/assets/review1.png",
+    "rating": 3,
+    "review": "The intuitive design and smart features of Capable made it easy to find meaningful connections. It's become my go-to app."
+  },
+  {
+    "name": "Emily Johnson",
+    "image": "/assets/review2.png",
+    "rating": 5,
+    "review": "I love how Capable helps me stay in touch with friends and meet new people. The app is user-friendly and effective."
+  },
+  {
+    "name": "Michael Brown",
+    "image": "/assets/user2.png",
+    "rating": 4,
+    "review": "With Capable, I've expanded my circle and found genuine connections. The smooth interface makes socializing so easy."
+  },
+  {
+    "name": "Michael Brown",
+    "image": "/assets/review1.png",
+    "rating": 5,
+    "review": "With Capable, I've expanded my circle and found genuine connections. The smooth interface makes socializing so easy."
+  }
+]
