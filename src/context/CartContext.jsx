@@ -8,21 +8,24 @@ export const CartProvider = ({ children }) => {
   const [cartItems, setCartItems] = useState([]);
 
         const addToCart = (item) => {
+          let updated = false;
           setCartItems(prevItems => {
             const existingItem = prevItems.find(i => i.title === item.title);
-
             if (existingItem) {
+              updated = true;
               return prevItems.map(i =>
-                i.title === item.title
-                  ? { ...i, quantity: item.quantity }
-                  : i
+                i.title === item.title ? { ...i, quantity: item.quantity } : i
               );
             } else {
-              console.log('Adding new item to cart:');
-              toast.success(`${item.title} added to cart`);
               return [...prevItems, { ...item, quantity: item.quantity || 1 }];
             }
           });
+
+          if (updated) {
+            toast.info(`${item.title} quantity updated`);
+          } else {
+            toast.success(`${item.title} added to cart`);
+          }
         };
 
         const removeFromCart = (title) => {
@@ -35,23 +38,13 @@ export const CartProvider = ({ children }) => {
         toast.warn('Cart cleared');
         };
 
-        const updateQuantity = (title, newQuantity) => {
-          setCartItems(prev =>
-            newQuantity <= 0
-              ? prev.filter(item => item.title !== title) 
-              : prev.map(item =>
-                  item.title === title ? { ...item, quantity: newQuantity } : item
-                )
-          );
-        };
-
         const getQuantity = (title) => {
           const item = cartItems.find((item) => item.title === title);
           return item ? item.quantity : 0;
         };
 
   return (
-    <CartContext.Provider value={{ cartItems, addToCart, removeFromCart, updateQuantity, clearCart, getQuantity }}>
+    <CartContext.Provider value={{ cartItems, addToCart, removeFromCart, clearCart, getQuantity }}>
       {children}
     </CartContext.Provider>
   );

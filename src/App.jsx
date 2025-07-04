@@ -6,8 +6,6 @@ import Cart from 'pages/Cart';
 import Navbar from 'layout/Navbar/Navbar';
 import Footer from 'layout/Footer/Footer';
 import 'App.css';
-import { ToastContainer } from 'react-toastify';
-
 
 function App() {
   return (
@@ -21,7 +19,6 @@ function App() {
         </Routes>
         <Footer />
       </Router>
-      {/* <ToastContainer position="bottom-right" /> */}
     </>
   );
 }

@@ -10,7 +10,8 @@ root.render(
   <React.StrictMode>
     <CartProvider>
       <App />
+      <ToastContainer position="bottom-right" theme='dark' autoClose={2000} />
     </CartProvider>
-      <ToastContainer position="bottom-left" autoClose={2000} />
   </React.StrictMode>
 );
+

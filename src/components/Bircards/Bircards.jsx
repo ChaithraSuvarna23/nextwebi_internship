@@ -38,19 +38,9 @@ export default function BiryaniCard({
   };
 
   const handleAdd = () => {
-    if (localQuantity <= 0) {
-      updateQuantity(title, 0);
-      toast.error('Please select a quantity before adding to cart');
-      return;
-    }
-
-    if (cartQuantity > 0) {
-      updateQuantity(title, localQuantity);
-      toast.info(`${title} quantity updated to ${localQuantity}`);
-    } else {
-      addToCart({ title, price, image, quantity: localQuantity }); 
-    }
+    addToCart({ title, price, image, quantity: localQuantity });
   };
+
 
   return (
     <div className="biryani-card">
