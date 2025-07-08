@@ -1,14 +1,17 @@
 import 'styles.css';
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import BiryaniCards from 'components/Bircards/Bircards';
-import biryaniData from 'data/biryaniData.json';
 import ReviewCards from 'components/Reviewcards/Reviewcards';
 import reviewData from 'data/reviewData';
 import { useNavigate } from 'react-router-dom';
-
+import axios from 'axios';
 
 function Home() {
   const carouselRef = useRef(null);
+  const [orderType, setOrderType] = useState('dinein');
+  const navigate = useNavigate();
+  const [biryaniData, setBiryaniData] = useState([]);
+  
   const scrollLeft = () => {
     if (carouselRef.current) {
       carouselRef.current.scrollBy({ left: -300, behavior: 'smooth' });
@@ -21,10 +24,16 @@ function Home() {
     }
   };
 
-  const [orderType, setOrderType] = useState('dinein');
+  useEffect(() => {
+      axios.get('http://localhost:5000/api/biryani')
+        .then(response => {
+          setBiryaniData(response.data);
+        })
+        .catch(error => {
+          console.error('Error fetching biryani items:', error);
+        });
+  }, []);
 
-  const navigate = useNavigate();
-  
   return (
     <>
       <section className="biryani" style={{ backgroundImage: "url('/assets/biryani.png')" }}>

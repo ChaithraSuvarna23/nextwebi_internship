@@ -13,6 +13,7 @@ import {
 } from '@mui/material';
 import { Add, Remove, Delete } from '@mui/icons-material';
 import 'styles.css';
+import { Link } from 'react-router-dom';
 
 export default function Cart() {
   const { cartItems, addToCart, removeFromCart, clearCart } = useCart();
@@ -101,6 +102,23 @@ export default function Cart() {
           >
             Clear Cart
           </Button>
+          
+          <Link to="/checkout" style={{ textDecoration: 'none' }}>
+            <Button
+              variant="contained"
+              sx={{
+                backgroundColor: '#2E7D32',
+                mt: 2,
+                display: 'block',
+                ml: 'auto',
+                borderRadius: '10px',
+                color: 'white'
+              }}
+            >
+              Proceed to Checkout
+            </Button>
+          </Link>
+
         </>
       )}
     </Box>

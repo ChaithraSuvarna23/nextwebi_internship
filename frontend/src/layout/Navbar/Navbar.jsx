@@ -18,7 +18,7 @@ export default function Navbar() {
         <Link to="#">Menu</Link>
         <Link to="#">Contact</Link>
         <Link to="/list" className="dinebtn">Dine in</Link>
-        
+        <Link to="/orders">My Orders</Link>
         <Link to="/cart" className="cart-link">
           <Badge
             badgeContent={totalItems}
