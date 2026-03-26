@@ -27,7 +27,9 @@ export default function List() {
   const getQuantity = (title) => {
     const item = cartItems.find(i => i.title === title);
     return item ? item.quantity : 0;
-  };
+  }; 
+
+  console.log('Biryani Data:', biryaniData);
 
   const filteredItems = biryaniData
     .filter(item => cuisineFilter.length === 0 || item.cuisine.some(c => cuisineFilter.includes(c)))

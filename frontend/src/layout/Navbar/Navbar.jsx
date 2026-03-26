@@ -14,9 +14,9 @@ export default function Navbar() {
       <img className="logo" src="/assets/logo 2.png" alt="Logo" />
       <nav className="nav-links">
         <Link to="/">Home</Link>
-        <Link to="#">About Us</Link>
+        {/*<Link to="#">About Us</Link>
         <Link to="#">Menu</Link>
-        <Link to="#">Contact</Link>
+        <Link to="#">Contact</Link>*/}
         <Link to="/list" className="dinebtn">Dine in</Link>
         <Link to="/orders">My Orders</Link>
         <Link to="/cart" className="cart-link">
